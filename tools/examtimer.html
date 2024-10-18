@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>涵&#039;s blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="涵&#039;s blog"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="涵&#039;s blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="exam timer                   			h1{ 				font-size: 200%; 			}             h1,h2{ 				text-align: center; 				font-family: &amp;quot;Georgia&amp;quot;; 			}  			#schedule{ 				font-size: 250%;"><meta property="og:type" content="website"><meta property="og:title" content="涵&#039;s blog"><meta property="og:url" content="http://example.com/tools/examtimer.html"><meta property="og:site_name" content="涵&#039;s blog"><meta property="og:description" content="exam timer                   			h1{ 				font-size: 200%; 			}             h1,h2{ 				text-align: center; 				font-family: &amp;quot;Georgia&amp;quot;; 			}  			#schedule{ 				font-size: 250%;"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://example.com/img/og_image.png"><meta property="article:published_time" content="2024-10-18T15:18:16.699Z"><meta property="article:modified_time" content="2024-10-08T11:58:16.000Z"><meta property="article:author" content="Sunny"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="http://example.com/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/tools/examtimer.html"},"headline":"涵's blog","image":["http://example.com/img/og_image.png"],"datePublished":"2024-10-18T15:18:16.699Z","dateModified":"2024-10-08T11:58:16.000Z","author":{"@type":"Person","name":"Sunny"},"publisher":{"@type":"Organization","name":"涵's blog","logo":{"@type":"ImageObject","url":"http://example.com/tools/logo.png"}},"description":"exam timer                   \t\t\th1{ \t\t\t\tfont-size: 200%; \t\t\t}             h1,h2{ \t\t\t\ttext-align: center; \t\t\t\tfont-family: &quot;Georgia&quot;; \t\t\t}  \t\t\t#schedule{ \t\t\t\tfont-size: 250%;"}</script><link rel="canonical" href="http://example.com/tools/examtimer.html"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/logo.png" alt="涵&#039;s blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/%5Bobject%20Object%5D">Tools</a></div><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="content"><!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="utf-8">
+        <title>exam timer</title>
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <style>
+			h1{
+				font-size: 200%;
+			}
+            h1,h2{
+				text-align: center;
+				font-family: "Georgia";
+			} 
+			#schedule{
+				font-size: 250%;
+                font-family: "STKaiti" ;
+                font-weight: bold;
+				margin-top: 7%;
+				margin-left: 15%;
+			}
+			aside{
+				float: right;
+				padding: 10px;
+				margin-right: 15%;
+			}
+			#count_down, #arrive_subject{
+                color: #3C3C3C;
+				font-size: 400%;
+				margin-top: 5%;
+			}
+			.add{
+				font-size: 100%;
+			}
+			input {
+    			width: 100px;
+    			height: 20px;
+			}
+			#current_time{
+				font-size: 1300%;
+				top: 5%;
+				right: 5%;
+				text-align: center;
+				margin-bottom: 5%;
+			}
+			body{
+				background-color: #fff5ee;
+			}
+            footer{
+                text-align: center;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                height: 2.5rem;   
+				margin-top: auto; 
+            }
+		</style>
+		<script>
+            // current time show
+            var i=0;
+            function currentTime(){
+                var now=new Date();
+                var hours=now.getHours();
+                var minutes=now.getMinutes();
+                var seconds=now.getSeconds();
+                
+                if(hours<10) hours = '0' + hours;
+                if(minutes<10) minutes = '0' + minutes;
+                if(seconds<10) seconds = '0' + seconds;
+
+                document.getElementById("current_time").innerHTML = hours+"："+minutes+"："+seconds;
+            }
+            setInterval(currentTime,1000);
+        </script>
+    </head>
+    
+    <body>
+        <h1>Exam Timer</h1>
+		<p id="current_time"></p>
+		<aside>
+			<h2 id="arrive_subject"></h2>
+			<h2 id="count_down"></h2>
+		</aside>
+		<p id="schedule"></p>
+		<br>
+		<br>
+		<div class="add">
+				<p>Subject <input type="text" id="subject"></p>
+				<p>Start time <input type="time" id="start_time"></p>
+				<p>End time <input type="time" id="end_time"></p>
+				<button onclick="add_ifm()">Save</button>
+		</div>
+		<footer>
+            <small>
+                © 2024 Sunny Han.
+            </small>
+        </footer>
+   		<script>
+			// show subject
+			let n=0
+				
+			let subject = []; // Array to store subjects
+        	let start_time = []; // Array to store start times
+    		let end_time = []; // Array to store end times
+
+			function add_ifm(){
+				subject[n]= document.getElementById("subject").value;
+				start_time[n]= document.getElementById("start_time").value;
+				end_time[n]= document.getElementById("end_time").value;
+					
+				// clear the input box
+				document.getElementById("subject").value= '';
+				document.getElementById("start_time").value= '';
+				document.getElementById("end_time").value= '';
+					
+				// Update schedule
+            	const scheduleElement = document.getElementById("schedule");
+        		scheduleElement.innerHTML += subject[n] + " " + start_time[n] + " ~ " + end_time[n] + "<br>";
+				n++;
+			}
+				
+				
+			//count down time
+			let now = new Date();
+			let now_hours = now.getHours();
+            let now_minutes = now.getMinutes();
+			function counter() {
+    			let now = new Date();
+    			let now_hours = now.getHours();
+    			let now_minutes = now.getMinutes();
+				let now_seconds = now.getSeconds();
+
+    			for (var i = 0; i < n; i++) {
+        			const [start_hours, start_minutes] = start_time[i].split(":").map(Number); // Convert to numbers
+        			const [end_hours, end_minutes] = end_time[i].split(":").map(Number); // Convert to numbers
+
+					const start_time_in_minutes = start_hours*60 + start_minutes;
+					const end_time_in_minutes = end_hours*60 + end_minutes;
+					const now_time_in_minutes = now_hours*60 + now_minutes;
+						
+					// Check if the current time matches the start time
+                	if (now_time_in_minutes >= start_time_in_minutes && now_time_in_minutes <= end_time_in_minutes) {
+						document.getElementById("arrive_subject").innerHTML = subject[i];
+                		let left_minutes = end_time_in_minutes - now_time_in_minutes;
+                    
+                    	if (left_minutes === 1) {
+							count_down_display = left_minutes + " minute";
+						} 
+						else if (left_minutes === 0) {
+							if(subject[i+1] == '自習'){
+								count_down_display = "(下節" + subject[i+1] + ")";
+								document.getElementById("arrive_subject").innerHTML = "下課";
+							}
+					   		else if(i == subject.length-1){
+								document.getElementById("arrive_subject").innerHTML = "放學";
+								count_down_display = " ";
+					   		}
+					   		else{
+								count_down_display = "(下節考" + subject[i+1] + ")";
+								document.getElementById("arrive_subject").innerHTML = "下課";
+					   		}
+						}
+						else {
+    						count_down_display = left_minutes + " minutes";
+						}
+						document.getElementById("count_down").innerHTML = count_down_display;
+					}
+				}
+        	}												
+        	setInterval(counter,1000);
+		</script>
+	</body>
+</html></div><!--!--></article></div><!--!--><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Sunny"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Sunny</p><p class="is-size-6 is-block">中學生 網頁初學者</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Taiwan Taipei</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Post</p><a href="/archives/"><p class="title">1</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories/"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags/"><p class="title">2</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sunnyhan0317" target="_blank" rel="me noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/sunnyhan0317"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Instagram" href="https://www.instagram.com/sunny._.0317/"><i class="fab fa-instagram"></i></a></div></div></div><!--!--><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-09-20T16:00:00.000Z">2024-09-21</time></p><p class="title"><a href="/2024/09/21/my-first-blog/">我的第一篇blog出來囉</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2024/09/"><span class="level-start"><span class="level-item">September 2024</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Sunny-s-daily/"><span class="tag">Sunny&#039;s daily</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/blog/"><span class="tag">blog</span><span class="tag">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/logo.png" alt="涵&#039;s blog" height="28"></a><p class="is-size-7"><span>&copy; 2024 Sunny</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><script data-pjax src="/js/main.js" defer></script><!--!--></body></html>
