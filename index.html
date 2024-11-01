@@ -29,18 +29,20 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Sunny&#039;s blog</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/examtimer">Exam Timer</a><a class="navbar-item" href="/score.html">Tools</a></div><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-10-27T16:00:00.000Z" title="2024/10/28 上午12:00:00">2024-10-28</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-11-01T14:04:44.717Z" title="2024/11/1 下午10:04:44">2024-11-01</time></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/10/28/Exam-Timer/">Exam Timer 使用說明</a></p><div class="content"><p>段考倒數計時器，就如同他的名字，他是在段考的時候用來倒數計時的工具。</p>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Sunny&#039;s blog</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/examtimer">Exam Timer</a><a class="navbar-item" href="/score.html">Tools</a></div><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-10-27T16:00:00.000Z" title="2024/10/28 上午12:00:00">2024-10-28</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-11-01T14:20:50.823Z" title="2024/11/1 下午10:20:50">2024-11-01</time></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/10/28/Exam-Timer/">Exam Timer 使用說明</a></p><div class="content"><p>段考倒數計時器，就如同他的名字，他是在段考的時候用來倒數計時的工具。</p>
 <p>這個工具大致分為幾個功能：</p>
 <p>1.當前時間<br>2.考程表（包含換班提醒）<br>3.當節科目<br>4.當節剩餘時間<br>5.下節考試項目<br>6.座位表（待開發）</p>
-<h2 id="功能介紹"><a href="#功能介紹" class="headerlink" title="功能介紹"></a>功能介紹</h2><h3 id="一、當前時間"><a href="#一、當前時間" class="headerlink" title="一、當前時間"></a>一、當前時間</h3><p>顯示於「Exam Timer」下方，取得電腦上的當前時間，基本上為準確時間。<br></br></p>
-<h3 id="二、考程表"><a href="#二、考程表" class="headerlink" title="二、考程表"></a>二、考程表</h3><p>於輸入欄分別填入科目、換班與否、開始時間、結束時間，按下「Save」後將顯示於時間下方，靠左側。<br></br></p>
+</br>
+
+<h2 id="功能介紹"><a href="#功能介紹" class="headerlink" title="功能介紹"></a>功能介紹</h2><h3 id="一、當前時間"><a href="#一、當前時間" class="headerlink" title="一、當前時間"></a>一、當前時間</h3><p>顯示於「Exam Timer」下方，時間從電腦系統取得，基本上為準確時間。<br></br></p>
+<h3 id="二、考程表"><a href="#二、考程表" class="headerlink" title="二、考程表"></a>二、考程表</h3><p>於輸入欄分別填入科目、換班與否、開始時間、結束時間，按下「Save」後將顯示於時間下方，內容將顯示在左側，方便查看。<br></br></p>
 <h3 id="三、當前科目"><a href="#三、當前科目" class="headerlink" title="三、當前科目"></a>三、當前科目</h3><p>當時間到該科目的開始時間，就會顯示目前的考試科目，與剩餘時間同樣顯示於時間下方，靠右。<br></br></p>
-<h3 id="四、當節剩餘時間"><a href="#四、當節剩餘時間" class="headerlink" title="四、當節剩餘時間"></a>四、當節剩餘時間</h3><p>以使用者輸入的結束時間去判斷該科目剩餘多久結束，並於每分鐘更新一次。</p>
-<p><strong>注意： 開始時刻依舊依學校鐘聲為主，此為參考用，通常學校鐘聲不會很準時。</strong><br></br></p>
-<h3 id="五、下節考試科目"><a href="#五、下節考試科目" class="headerlink" title="五、下節考試科目"></a>五、下節考試科目</h3><p>於下課時間（即非考試時間）顯示下節考什麼科目，方便查看。<br></br><br></br></p>
-<h2 id="問題解決辦法"><a href="#問題解決辦法" class="headerlink" title="問題解決辦法"></a>問題解決辦法</h2><h3 id="1-輸入錯誤"><a href="#1-輸入錯誤" class="headerlink" title="1.輸入錯誤"></a>1.輸入錯誤</h3><p>若有任一項輸入錯誤皆無法更改，需按下頁面刷新，並重新輸入。</p>
-<h3 id="2-刷新即消失"><a href="#2-刷新即消失" class="headerlink" title="2.刷新即消失"></a>2.刷新即消失</h3><p>沒有記憶模式，使用時請小心不要關閉頁面。</p>
-<h3 id="3-沒全螢幕按鈕"><a href="#3-沒全螢幕按鈕" class="headerlink" title="3.沒全螢幕按鈕"></a>3.沒全螢幕按鈕</h3><p>至網頁選單內選擇全螢幕即可</p>
+<h3 id="四、當節剩餘時間"><a href="#四、當節剩餘時間" class="headerlink" title="四、當節剩餘時間"></a>四、當節剩餘時間</h3><p>根據用戶輸入的結束時間，自動計算當節科目剩餘時間，每分鐘更新一次。</p>
+<p><strong>提醒： 開始時間以學校鐘聲為主，此功能僅作為參考，學校鐘聲時間可能會有誤差。</strong><br></br></p>
+<h3 id="五、下節考試科目"><a href="#五、下節考試科目" class="headerlink" title="五、下節考試科目"></a>五、下節考試科目</h3><p>於非考試時間（下課時間）顯示下節考試科目，方便預覽下一科考試內容。<br></br><br></br></p>
+<h2 id="問題解決辦法"><a href="#問題解決辦法" class="headerlink" title="問題解決辦法"></a>問題解決辦法</h2><h3 id="1-輸入錯誤"><a href="#1-輸入錯誤" class="headerlink" title="1.輸入錯誤"></a>1.輸入錯誤</h3><p>輸入錯誤後無法直接修改，需刷新頁面並重新輸入。</p>
+<h3 id="2-刷新即消失"><a href="#2-刷新即消失" class="headerlink" title="2.刷新即消失"></a>2.刷新即消失</h3><p>此工具無記憶模式，請避免在未保存的情況下關閉頁面。</p>
+<h3 id="3-沒全螢幕按鈕"><a href="#3-沒全螢幕按鈕" class="headerlink" title="3.沒全螢幕按鈕"></a>3.沒全螢幕按鈕</h3><p>至網頁選單內選擇全螢幕即可。</p>
 </br>
 </br>
 
