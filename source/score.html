@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my url</title>
+    <style>
+        #show {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Score editing</h1>
+    <p>sign in  <input id="sign" type="password"></p>
+    <button onclick="enter()">Enter</button>
+    <p id="show"><a href="https://docs.google.com/spreadsheets/d/1wLnwTlwWpvGwy9jyjEOdOxZRye_gtvCk/edit?usp=sharing&ouid=113453988098289452588&rtpof=true&sd=true">score editing</a></p>
+    <script>
+        function enter(){
+            var enter = document.getElementById("sign").value;
+
+            if (enter === "sunny0317") show.style.display = 'block'; 
+        } 
+    </script>
+</body>
+</html>
