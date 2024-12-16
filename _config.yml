@@ -6,11 +6,11 @@ variant: default
 title: "Sunny's blog"
 
 logo:
-    img: /logo.png
+    # img: /logo.png
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: logo.png
+    favicon: # logo.png
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
