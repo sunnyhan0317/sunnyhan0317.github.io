@@ -3,14 +3,13 @@ version: 5.1.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-title: "Sunny's blog"
+title: Sunny's blog
 
-logo:
-    # img: /logo.png
+logo: /img/Sunny.jpg
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: # logo.png
+    favicon: /img/sun.png
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -18,7 +17,7 @@ head:
         name: Sunny's blog
         # The displayed name of the web application
         # when there is not enough space to display full name
-        short_name: Sunny's blog
+        short_name: /img/sun.png
         # The start URL of the web application
         start_url: https://sunnyhan0317.github.io/
         # The default theme color for the application
@@ -61,12 +60,6 @@ head:
         # Page description (og:description) (optional)
         # You should leave this blank for most of the time
         description: 
-        # Twitter card type (twitter:card)
-        twitter_card: 
-        # Twitter ID (twitter:creator)
-        twitter_id: 
-        # Twitter Site (twitter:site)
-        twitter_site: 
         # Google+ profile link (deprecated)
         google_plus: 
         # Facebook admin ID
@@ -107,11 +100,9 @@ head:
 # Page top navigation bar configurations
 navbar:
     menu:
-        Home: /
         About: /about
-        Archives: /archives 
         Exam Timer: /examtimer
-        Tools: /score.html
+        Tools: /
         
     # Links to be shown on the right of the navigation bar
     links:
@@ -121,35 +112,10 @@ navbar:
 # Page footer configurations
 footer:
     # Copyright text
-    copyright: '© 2024 Sunny'
+    copyright: '© 2025 Sunny Han'
     # Links to be shown on the right of the footer section
     
-# Article related configurations
-article:
-    # Code highlight settings
-    highlight:
-        # Code highlight themes
-        # https://github.com/highlightjs/highlight.js/tree/master/src/styles
-        theme: atom-one-light
-        # Show copy code button
-        clipboard: true
-        # Default folding status of the code blocks. Can be "", "folded", "unfolded"
-        fold: unfolded
-    # Whether to show estimated article reading time
-    readtime: false
-    # Whether to show updated time. For "auto", shows article update time only when page.updated is set and it is different from page.date
-    update_time: true
-    # Article licensing block
-    licenses:
-        Creative Commons:
-            icon: fab fa-creative-commons
-            url: https://creativecommons.org/
-        Attribution:
-            icon: fab fa-creative-commons-by
-            url: https://creativecommons.org/licenses/by/4.0/
-        Noncommercial:
-            icon: fab fa-creative-commons-nc
-            url: https://creativecommons.org/licenses/by-nc/4.0/
+
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
@@ -176,7 +142,7 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: Sunny
+        author: Sunny 涵
         # Author title
         author_title:
          中學生
@@ -210,16 +176,16 @@ widgets:
         collapsed: true
         # Maximum level of headings to show (1-6)
         depth: 3
+        # Recent posts widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: recent_posts
     # Recommendation links widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
         type: categories
-    # Recent posts widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: recent_posts
     # Archives widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
